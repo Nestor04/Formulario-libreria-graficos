@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ventas por Mes</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <!--En esta practica se estara utilizando la libreria Chart.js, hesta nor permite generar grafica-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulario de Ventas por Mes</h1>
+        <form id="salesForm">
+            <label for="month">Mes:</label>
+            <input type="text" id="month" placeholder="Enero" required />
+
+            <label for="sales">Ventas:</label>
+            <input type="number" id="sales" placeholder="1000" required />
+
+            <button type="submit">Agregar Datos</button>
+        </form>
+
+        <canvas id="salesChart" width="400" height="200"></canvas>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
